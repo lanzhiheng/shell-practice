@@ -1,8 +1,8 @@
 #!/bin/bash
 
-number="$1"; min="$2"; max="$3"
-
 validint() {
+    number="$1"; min="$2"; max="$3"
+
     if [ -z $number ]; then
         echo "You didn't enter anything. Please enter a number." >&2
         return 1
@@ -37,6 +37,6 @@ validint() {
     return 0
 }
 
-if validint "$1" "$2" "$3" ; then
-    echo "input is a valid integer within your constraints."
-fi
+# if validint "$1" "$2" "$3" ; then
+#     echo "input is a valid integer within your constraints."
+# fi
